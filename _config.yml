@@ -1,0 +1,40 @@
+# GitHub Pages Configuration
+# This enables GitHub Pages and configures how your site is built and deployed
+
+# Theme (optional - we're using custom HTML)
+# theme: jekyll-theme-minimal
+
+# Site configuration
+title: AI Support Operations Workflow
+description: Complete workflow documentation for 50+ person support teams
+url: https://fionachow2016.github.io/ai-support-workflows
+baseurl: /ai-support-workflows
+
+# Markdown processor
+markdown: kramdown
+
+# Exclude files from site
+exclude:
+  - .gitignore
+  - .env.example
+  - CONTRIBUTING.md
+  - LICENSE
+  - scripts/
+
+# Include hidden files if needed
+include:
+  - .github
+
+# Navigation
+plugins:
+  - jekyll-relative-links
+
+relative_links:
+  enabled: true
+  collections: false
+
+# Build settings
+show_downloads: false
+
+# Analytics (optional - add your tracking ID)
+# google_analytics: G-XXXXXXXXXX

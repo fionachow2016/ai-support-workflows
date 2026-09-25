@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Support Operations Workflow</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f7fa;
+            color: #2d3748;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #0066cc, #00d4ff);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .option-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .option-card {
+            background: white;
+            border: 1px solid #cbd5e0;
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+
+        .option-card:hover {
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+            transform: translateY(-4px);
+        }
+
+        .option-card .icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        .option-card h3 {
+            color: #0066cc;
+            margin-bottom: 10px;
+            font-size: 1.4em;
+        }
+
+        .option-card p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #0066cc;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .btn:hover {
+            background: #0052a3;
+        }
+
+        .btn-secondary {
+            background: #00d4ff;
+            color: #000;
+        }
+
+        .btn-secondary:hover {
+            background: #00b3d4;
+        }
+
+        .intro {
+            background: #f5f7fa;
+            border-left: 4px solid #0066cc;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 4px;
+        }
+
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .feature {
+            background: white;
+            padding: 20px;
+            border-radius: 6px;
+            border-left: 4px solid #0066cc;
+        }
+
+        .feature h4 {
+            color: #0066cc;
+            margin-bottom: 8px;
+        }
+
+        .docs-section {
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .docs-section h2 {
+            color: #0066cc;
+            margin-bottom: 20px;
+        }
+
+        .doc-link {
+            display: inline-block;
+            background: #f5f7fa;
+            border: 1px solid #cbd5e0;
+            padding: 15px 20px;
+            margin: 10px 10px 10px 0;
+            border-radius: 6px;
+            text-decoration: none;
+            color: #2d3748;
+            transition: all 0.3s ease;
+        }
+
+        .doc-link:hover {
+            background: #e2e8f0;
+            border-color: #0066cc;
+            color: #0066cc;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #666;
+            border-top: 1px solid #cbd5e0;
+            margin-top: 60px;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #1a1f2e;
+                color: #e2e8f0;
+            }
+            .option-card, .feature, .docs-section {
+                background: #2d3748;
+                border-color: #4a5568;
+            }
+            .intro {
+                background: #2d3748;
+            }
+            .doc-link {
+                background: #1a202c;
+                border-color: #4a5568;
+                color: #e2e8f0;
+            }
+            .doc-link:hover {
+                background: #4a5568;
+                border-color: #0066cc;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🚀 AI Support Operations Workflow</h1>
+        <p>Ticket Triage • Response Drafting • Knowledge Base Search</p>
+    </div>
+
+    <div class="container">
+        <div class="intro">
+            <strong>Welcome!</strong> Choose how you'd like to explore this workflow:
+        </div>
+
+        <div class="option-grid">
+            <div class="option-card">
+                <div class="icon">📊</div>
+                <h3>Interactive Demo</h3>
+                <p>Explore the full workflow with interactive tabs and examples</p>
+                <a href="dashboard.html" class="btn">View Dashboard</a>
+            </div>
+
+            <div class="option-card">
+                <div class="icon">📖</div>
+                <h3>Read the Docs</h3>
+                <p>Detailed runbooks for each role and workflow</p>
+                <a href="../README.md" class="btn">Start Reading</a>
+            </div>
+
+            <div class="option-card">
+                <div class="icon">⚡</div>
+                <h3>Quick Start</h3>
+                <p>One-page cheat sheet for agents</p>
+                <a href="QUICK_REFERENCE_CARD.md" class="btn">Print Reference</a>
+            </div>
+        </div>
+
+        <div class="docs-section">
+            <h2>📋 What's Included</h2>
+            <div class="feature-list">
+                <div class="feature">
+                    <h4>🎯 Ticket Triage</h4>
+                    <p>Automatic classification by category and urgency</p>
+                </div>
+                <div class="feature">
+                    <h4>✍️ Response Drafting</h4>
+                    <p>AI-generated responses with knowledge base articles</p>
+                </div>
+                <div class="feature">
+                    <h4>📚 KB Search</h4>
+                    <p>Semantic search finding relevant documentation</p>
+                </div>
+                <div class="feature">
+                    <h4>👥 Role-Based Guides</h4>
+                    <p>Runbooks for agents, leads, managers, knowledge managers</p>
+                </div>
+                <div class="feature">
+                    <h4>📊 Implementation Guide</h4>
+                    <p>Step-by-step setup in 7 phases</p>
+                </div>
+                <div class="feature">
+                    <h4>🎓 Training Materials</h4>
+                    <p>Templates, checklists, and quick reference cards</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="docs-section">
+            <h2>📚 All Documentation</h2>
+            <div style="margin: 20px 0;">
+                <h4 style="color: #0066cc; margin-bottom: 15px;">Getting Started</h4>
+                <a href="../README.md" class="doc-link">📖 Main README - Overview & Reading Guide</a>
+            </div>
+            <div style="margin: 20px 0;">
+                <h4 style="color: #0066cc; margin-bottom: 15px;">Runbooks (Read by Role)</h4>
+                <a href="../docs/TICKET_TRIAGE_RUNBOOK.md" class="doc-link">🎯 Ticket Triage Runbook</a>
+                <a href="../docs/RESPONSE_DRAFTING_RUNBOOK.md" class="doc-link">✍️ Response Drafting Runbook</a>
+                <a href="../docs/KNOWLEDGE_BASE_RUNBOOK.md" class="doc-link">📚 KB Search Runbook</a>
+                <a href="../docs/IMPLEMENTATION_GUIDE.md" class="doc-link">⚙️ Implementation Guide</a>
+            </div>
+            <div style="margin: 20px 0;">
+                <h4 style="color: #0066cc; margin-bottom: 15px;">Quick Reference</h4>
+                <a href="../docs/QUICK_REFERENCE_CARD.md" class="doc-link">⚡ Quick Reference Card (Print This!)</a>
+            </div>
+            <div style="margin: 20px 0;">
+                <h4 style="color: #0066cc; margin-bottom: 15px;">Project Info</h4>
+                <a href="../CONTRIBUTING.md" class="doc-link">🤝 Contributing Guidelines</a>
+                <a href="../CHANGELOG.md" class="doc-link">📝 Changelog & Roadmap</a>
+                <a href="../PROJECT_STATUS.md" class="doc-link">📊 Project Status</a>
+            </div>
+        </div>
+
+        <div class="docs-section">
+            <h2>🎯 Quick Navigation</h2>
+            <p><strong>For Agents:</strong> Start with Quick Reference Card, then read Response Drafting Runbook</p>
+            <p><strong>For Team Leads:</strong> Read all runbooks and review metrics section</p>
+            <p><strong>For Managers:</strong> Read Implementation Guide and Project Status</p>
+            <p><strong>For Implementation:</strong> Follow the 7-phase Implementation Guide</p>
+        </div>
+
+        <div class="docs-section">
+            <h2>❓ Common Questions</h2>
+            <p><strong>Q: What does this workflow do?</strong><br>
+            A: Automates ticket triage, response drafting, and knowledge base search to save agents ~15 minutes per ticket.</p>
+
+            <p style="margin-top: 20px;"><strong>Q: Do I need Claude.ai to use this?</strong><br>
+            A: For implementation, yes (Claude API). But the documentation and dashboard work without login.</p>
+
+            <p style="margin-top: 20px;"><strong>Q: How long does setup take?</strong><br>
+            A: 2-3 hours for infrastructure + 15 min per agent training + 1 week soft launch = Live in ~2 weeks.</p>
+
+            <p style="margin-top: 20px;"><strong>Q: Can I customize this?</strong><br>
+            A: Yes! Everything is markdown and templates. Edit freely for your company.</p>
+
+            <p style="margin-top: 20px;"><strong>Q: Where are the Python scripts?</strong><br>
+            A: Coming in v1.1. For now, the docs tell you exactly what each script does.</p>
+        </div>
+
+        <div class="docs-section">
+            <h2>🚀 Getting Started</h2>
+            <ol style="margin-left: 20px; line-height: 2;">
+                <li><strong>View the dashboard:</strong> Click "Interactive Demo" above</li>
+                <li><strong>Read the README:</strong> Start with the main overview</li>
+                <li><strong>Pick your role:</strong> Read the relevant runbook(s)</li>
+                <li><strong>Print the quick ref:</strong> Keep at your desk</li>
+                <li><strong>Ready to implement?</strong> Follow the Implementation Guide (7 phases)</li>
+            </ol>
+        </div>
+
+        <div class="docs-section">
+            <h2>📞 Questions?</h2>
+            <p>This documentation is self-contained. Everything you need is in the files linked above.</p>
+            <p><strong>Can't find something?</strong> Check the main <a href="../README.md">README.md</a> - it has a complete index.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p><strong>AI Support Operations Workflow v1.0</strong></p>
+        <p>Documentation • Templates • Implementation Guide</p>
+        <p style="margin-top: 20px; font-size: 0.9em;">
+            🔒 Private Repository | 📖 Open Source Friendly (MIT License) | 🚀 Production Ready
+        </p>
+    </footer>
+</body>
+</html>
