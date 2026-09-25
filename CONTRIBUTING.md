@@ -91,8 +91,8 @@ Thank you for contributing to this project! Here's how to help:
 
 - [Main README](../README.md) — Overview and getting started
 - [Implementation Guide](./docs/IMPLEMENTATION_GUIDE.md) — Setup instructions
-- [Ticket Triage Runbook](./TICKET_TRIAGE_RUNBOOK.md) — Classification guide
-- [Response Drafting Runbook](./RESPONSE_DRAFTING_RUNBOOK.md) — Quality standards
+- [Ticket Triage Runbook](./docs/01-TICKET_TRIAGE_RUNBOOK.md) — Classification guide
+- [Response Drafting Runbook](./docs/02-RESPONSE_DRAFTING_RUNBOOK.md) — Quality standards
 
 ---
 
