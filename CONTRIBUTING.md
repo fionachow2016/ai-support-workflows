@@ -90,7 +90,7 @@ Thank you for contributing to this project! Here's how to help:
 ## 🎓 Resources
 
 - [Main README](../README.md) — Overview and getting started
-- [Implementation Guide](./IMPLEMENTATION_GUIDE.md) — Setup instructions
+- [Implementation Guide](./docs/IMPLEMENTATION_GUIDE.md) — Setup instructions
 - [Ticket Triage Runbook](./TICKET_TRIAGE_RUNBOOK.md) — Classification guide
 - [Response Drafting Runbook](./RESPONSE_DRAFTING_RUNBOOK.md) — Quality standards
 
