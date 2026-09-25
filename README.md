@@ -49,7 +49,7 @@ This workflow automates three critical support functions to save each agent **~1
 
 | Link | Purpose |
 |------|---------|
-| **Interactive Dashboard** | [https://claude.ai/artifact/734MDStRtPPQ5Kv8gYhT1B](https://claude.ai/artifact/734MDStRtPPQ5Kv8gYhT1B) | Show team how workflows work |
+| **Interactive Dashboard** | [https://github.com/fionachow2016/ai-support-workflows/blob/main/docs/dashboard.html](https://github.com/fionachow2016/ai-support-workflows/blob/main/docs/dashboard.html) | Show team how workflows work |
 
 ---
 
@@ -90,33 +90,33 @@ This workflow automates three critical support functions to save each agent **~1
 ┌─────────────────────────────────────────────────────────────┐
 │                   TICKET LIFECYCLE                          │
 ├─────────────────────────────────────────────────────────────┤
-│                                                               │
+│                                                             │
 │  Customer submits ticket                                    │
-│        ↓                                                     │
-│  🤖 WORKFLOW 1: AI Triages (automatic)                      │
-│     • Classifies: category, urgency, sentiment             │
-│     • Routes to right queue                                │
-│     • Tags with metadata                                   │
-│        ↓                                                     │
-│  📚 WORKFLOW 3: AI Searches KB (automatic)                 │
-│     • Finds top 3 relevant articles                        │
-│     • Includes in suggested response                       │
-│        ↓                                                     │
-│  👤 WORKFLOW 2: Agent Reviews & Responds (human)           │
-│     • Reads AI-drafted response                            │
-│     • Customizes as needed                                 │
-│     • Adds personal touch                                  │
-│     • Sends to customer                                    │
 │        ↓                                                    │
-│  Customer gets answer (faster!)                            │
-│                                                               │
+│  🤖 WORKFLOW 1: AI Triages (automatic)                      │
+│     • Classifies: category, urgency, sentiment              │
+│     • Routes to right queue                                 │
+│     • Tags with metadata                                    │
+│        ↓                                                    │
+│  📚 WORKFLOW 3: AI Searches KB (automatic)                  │
+│     • Finds top 3 relevant articles                         │
+│     • Includes in suggested response                        │
+│        ↓                                                    │
+│  👤 WORKFLOW 2: Agent Reviews & Responds (human)            │
+│     • Reads AI-drafted response                             │
+│     • Customizes as needed                                  │
+│     • Adds personal touch                                   │
+│     • Sends to customer                                     │
+│        ↓                                                    │
+│  Customer gets answer (faster!)                             │
+│                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
 
 ### Triage Categories
 
 | Category | What It Includes | Queue |
-|----------|-----------------|-------|
+|----------|------------------|-------|
 | **🚚 Shipping** | Tracking, delays, carrier issues | SHIPPING_TEAM |
 | **💳 Billing** | Refunds, invoices, payments | BILLING_TEAM |
 | **🔌 Integration** | API, webhooks, Shopify sync | INTEGRATION_TEAM |
@@ -250,12 +250,12 @@ For those curious about how it works:
 ```
 USER REQUESTS
     ↓
-┌────────────────────────────────┐
-│   ZENDESK (Ticketing System)   │
-├────────────────────────────────┤
-│  • Receives ticket from customer
-│  • Triggers webhook on ticket creation
-└────────────────────┬───────────┘
+┌─────────────────────────────────────────┐
+│   ZENDESK (Ticketing System)            │
+├─────────────────────────────────────────┤
+│  • Receives ticket from customer        │
+│  • Triggers webhook on ticket creation  │
+└────────────────────┬────────────────────┘
                      ↓
         ┌────────────────────────┐
         │  TRIAGE SERVICE        │
@@ -268,17 +268,17 @@ USER REQUESTS
     ┌─────────────────────────┐
     │  CLAUDE API (Anthropic) │
     ├─────────────────────────┤
-    │ • Analyzes text        │
-    │ • Classifies ticket    │
-    │ • Searches KB          │
-    │ • Generates response   │
+    │ • Analyzes text         │
+    │ • Classifies ticket     │
+    │ • Searches KB           │
+    │ • Generates response    │
     └────────┬────────────────┘
              ↓
     ┌──────────────────────────┐
     │  VECTOR DB (Pinecone)    │
     ├──────────────────────────┤
-    │  • Stores KB articles   │
-    │  • Semantic search      │
+    │  • Stores KB articles    │
+    │  • Semantic search       │
     └────────┬─────────────────┘
              ↓
         UPDATED ZENDESK TICKET
@@ -422,7 +422,7 @@ Month 2+: Monthly retros
 ## 📞 Support Channels
 
 | Question | Where to Ask |
-|----------|-------------|
+|----------|--------------|
 | Quick question about workflow | Print Quick Ref Card, check it first |
 | How do I use the response draft? | Read Response Drafting Runbook |
 | AI classified my ticket wrong | Edit tags in Zendesk, see Triage Runbook |
@@ -437,7 +437,7 @@ Month 2+: Monthly retros
 For training your team, we recommend:
 
 1. **10-minute demo:** Show the Interactive Dashboard
-   - https://claude.ai/artifact/734MDStRtPPQ5Kv8gYhT1B
+   - https://github.com/fionachow2016/ai-support-workflows/blob/main/docs/dashboard.html
 
 2. **5-minute Q&A:** Address concerns
    - "Won't this replace me?" No.
@@ -508,7 +508,7 @@ ai-support-workflows/
 ├── 04-IMPLEMENTATION_GUIDE.md
 ├── 05-QUICK_REFERENCE_CARD.md
 └── INTERACTIVE_DASHBOARD.html
-    └── https://claude.ai/artifact/734MDStRtPPQ5Kv8gYhT1B
+    └── https://github.com/fionachow2016/ai-support-workflows/blob/main/docs/dashboard.html
 ```
 
 ---
