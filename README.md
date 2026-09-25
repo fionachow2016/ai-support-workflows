@@ -49,7 +49,7 @@ This workflow automates three critical support functions to save each agent **~1
 
 | Link | Purpose |
 |------|---------|
-| **Interactive Dashboard** | [https://github.com/fionachow2016/ai-support-workflows/blob/main/docs/dashboard.html](https://github.com/fionachow2016/ai-support-workflows/blob/main/docs/dashboard.html) | Show team how workflows work |
+| **Interactive Dashboard** | [https://github.com/fionachow2016/ai-support-workflows/blob/main/docs/index.html](https://github.com/fionachow2016/ai-support-workflows/blob/main/docs/index.html) | Show team how workflows work |
 
 ---
 
@@ -437,7 +437,7 @@ Month 2+: Monthly retros
 For training your team, we recommend:
 
 1. **10-minute demo:** Show the Interactive Dashboard
-   - https://github.com/fionachow2016/ai-support-workflows/blob/main/docs/dashboard.html
+   - https://github.com/fionachow2016/ai-support-workflows/blob/main/docs/index.html
 
 2. **5-minute Q&A:** Address concerns
    - "Won't this replace me?" No.
@@ -508,7 +508,7 @@ ai-support-workflows/
 ├── 04-IMPLEMENTATION_GUIDE.md
 ├── 05-QUICK_REFERENCE_CARD.md
 └── INTERACTIVE_DASHBOARD.html
-    └── https://github.com/fionachow2016/ai-support-workflows/blob/main/docs/dashboard.html
+    └── https://github.com/fionachow2016/ai-support-workflows/blob/main/docs/index.html
 ```
 
 ---
