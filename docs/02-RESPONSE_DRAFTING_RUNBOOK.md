@@ -148,7 +148,8 @@ escalate this to our operations team for a manual trace.
 You'll hear from me either way by 5pm tomorrow.
 
 Best,
-Sarah (ShipStation Support)
+Sarah 
+(ShipStation Support)
 ---
 ```
 
